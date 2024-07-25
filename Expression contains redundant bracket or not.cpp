@@ -21,7 +21,7 @@ public:
                 bool IsRedundancythere = true;
                 while (Material.top() != '(')
                 {
-                    if (Material.top() != '*' || Material.top() != '/' || Material.top() != '-' || Material.top() != '+')
+                    if (Material.top() == '*' || Material.top() == '/' || Material.top() == '-' || Material.top() == '+')
                         IsRedundancythere = false;
                     Material.pop();
                 }
