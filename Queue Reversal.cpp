@@ -31,6 +31,24 @@ public:
     }
 };
 
+
+//Approach 2: using recursion: 
+
+void ReverseQueue(queue<int>&Q)
+{
+    if(Q.empty())
+    {
+        return;
+    }
+
+    int front = Q.front();
+    Q.pop();
+
+    ReverseQueue(Q);
+
+    Q.push(front);
+}
+
 //{ Driver Code Starts.
 int main()
 {
